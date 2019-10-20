@@ -1,1 +1,84 @@
+Lecture 04: 區塊、標題段落與佈局
+--------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8">
+<title>Sample09</title>
+</head>
 
+<body>
+<h2>我是標題 2</h2>
+<font size="5">我是 5 號字體</font>　<!--x 號標題對應到 (7-x) 號字體-->
+<hr/>
+<h5>我是標題 5</h5>
+<hr/>　<!--觀察兩條 hr，標題會自帶行距而文字不會-->
+<font size="2">我是 2 號字體</font><br>　<!--標題會自動換行，文字不會-->
+<font style="font-family: 標楷體">我是 2 號字體</font><br>　<!--size 為一種標籤屬性，其他格式則須寫入 style-->
+</body>
+</html>
+
+--------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8">
+<title>Sample10</title>
+<style>
+.one{background-color: rgb(100, 255, 0)}　/* .two 不受到影響 */
+</style>
+</head>
+
+<body>
+<div class="one">　<!--div 為一個大區塊，可協助統一格式-->
+<h3>我是標題 3</h3>
+<p>我是段落 1</p>　<!--div, h3, p 都是塊狀層級，自帶行距-->
+</div>
+<div class="two">
+<p>我是段落 2</p>
+</div>
+</body>
+</html>
+
+--------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8">
+<title>Sample11</title>
+<style>
+span{font-size: 40px}　/* 標籤選擇器 */
+</style>
+</head>
+
+<body>
+<h3>我是標題 3</h3>
+<p>我是段落 1<br>我是第二行</p>　<!--運用 br 可於段落內自動換行，與 span 均為內聯層級-->
+<p>我是段落 2<span>我還是第一行</span></p>　<!--運用 span 可於段落內不換行定義格式-->
+</body>
+</html>
+
+--------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8">
+<title>Sample12</title>
+</head>
+
+<body>
+<div style="width: 600px">　<!--以一個大區塊包含其他 div，可定義範圍-->
+<div style="background-color: rgb(0, 0, 255)">
+<h2  style="text-align: center; margin-bottom: 0px">這是一個主標題</h2></div>　<!--h2 自帶行距但背景色只套用文字，需設定 margin-bottom-->
+
+<div style="background-color: rgb(0, 255, 0); height: 300px; width: 160px; float:left">
+<p>功能選單按鈕</p>
+<p>功能 1<br>功能 2<br>功能 3</p></div>　<!--段落彼此亦帶行距，其內則用 br 分行-->
+<div style="background-color: yellow; height: 300px; width: 440px; float:left">　<!--float 設定對齊浮標向左，防止區塊未填滿便自動換行-->
+<font size="6">主頁內容</font></div>
+
+<div style="background-color: #000000; color: white; text-align: center">
+版權所有，翻印必究</div>　<!--亦可改為 font style="text-align: center"-->
+</div>
+</body>
+</html>
