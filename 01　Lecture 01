@@ -1,1 +1,49 @@
 
+Lecture 01: HTML 101
+--------------------------------------------------------------------------------
+
+<!DOCTYPE html>　<!--聲明為HTML文檔-->
+<html>
+<head>
+<meta content="text/html; charset=utf-8">　<!--使用中文編碼-->
+<title>Sample01</title>
+</head>
+
+<body>
+Hello world!
+</body>
+</html>
+
+--------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8">
+<title>Sample02</title>　<!--文檔標題會顯示在網頁的分列-->
+</head>
+
+<body>
+<h1>我是標題 1</h1>　<!--開頭與閉合標籤通常成對出現-->
+<h3>我是標題 3</h3>
+<h5>我是標題 5</h5>
+<p>這是一個段落</p>　<!--段落字體大小落在標題3, 4之間-->
+</body>
+</html>
+
+--------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8">
+<title>Sample03</title>
+</head>
+
+<body>　<!--body標籤內包含許多標籤: 巢狀-->
+<p>我是段落 1</p>　<!--文字內容為<p>所包覆，整組內容又為<body>包覆-->
+<p style="font-size: 20px">我是段落 2</p>　<!--開頭標籤可夾帶屬性資訊-->
+<hr>
+<a href="https://www.facebook.com/">我是一個臉書超連結</a>
+</body>
+</html>
