@@ -1,1 +1,34 @@
 
+Lecture 02: head 標籤 
+--------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8">
+<title>Sample04</title>　<!--文檔標題會顯示在網頁的分列-->
+<style>
+body{font-size: 20px}　/*定義 CSS 樣式（註解格式不同）*/
+</style>
+</head>
+
+<body>
+Hello World!
+</body>
+</html>
+
+--------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8">
+<title>Sample05</title>
+<base href="https://www.facebook.com/" target="_blank">　<!--base為所有連結之預設位址-->
+</head>
+
+<body>
+Hello World!
+<a href="samuel.chen.925">這是我的臉書</a>　<!--附加於 base 之後的網址內容-->
+</body>
+</html>
